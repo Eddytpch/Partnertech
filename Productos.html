@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PartnerTech - Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="PartnerTech Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="soporte-tecnico.html">Soporte Técnico</a></li>
+                <li><a href="implementacion-cctv.html">Implementación CCTV</a></li>
+                <li class="dropdown">
+                    <a href="productos.html">Productos <i class="fas fa-caret-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#pc-completa">PC Completa</a></li>
+                        <li><a href="#equipos-trabajo">Equipos de Trabajo</a></li>
+                        <li><a href="#adaptadores">Adaptadores</a></li>
+                        <li><a href="#redes">Redes</a></li>
+                        <li><a href="#licencias">Licencias</a></li>
+                        <li><a href="#smartphone">Smartphone</a></li>
+                        <li><a href="#miscelaneos">Misceláneos</a></li>
+                        <li><a href="#punto-venta">Punto de Venta</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="carrito-icono">
+            <a href="#carrito"><i class="fas fa-shopping-cart"></i> <span id="contador-carrito">0</span></a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Productos</h1>
+        <p>Encuentra los mejores productos tecnológicos al mejor precio.</p>
+    </section>
+
+    <section id="pc-completa" class="categoria">
+        <h2>PC Completa</h2>
+        <div class="producto">
+            <img src="images/pc-completa.jpg" alt="PC Completa">
+            <h3>PC Gamer Pro</h3>
+            <p class="precio">$1,500.00</p>
+            <button class="btn-add" data-producto="PC Gamer Pro" data-precio="1500">Añadir al carrito</button>
+        </div>
+        <!-- Más productos aquí -->
+    </section>
+
+    <section id="equipos-trabajo" class="categoria">
+        <h2>Equipos de Trabajo</h2>
+        <div class="producto">
+            <img src="images/equipo-trabajo.jpg" alt="Equipo de Trabajo">
+            <h3>Laptop Empresarial</h3>
+            <p class="precio">$1,200.00</p>
+            <button class="btn-add" data-producto="Laptop Empresarial" data-precio="1200">Añadir al carrito</button>
+        </div>
+        <!-- Más productos aquí -->
+    </section>
+
+    <section id="adaptadores" class="categoria">
+        <h2>Adaptadores</h2>
+        <div class="producto">
+            <img src="images/adaptador.jpg" alt="Adaptador">
+            <h3>Adaptador USB-C a HDMI</h3>
+            <p class="precio">$25.00</p>
+            <button class="btn-add" data-producto="Adaptador USB-C a HDMI" data-precio="25">Añadir al carrito</button>
+        </div>
+        <!-- Más productos aquí -->
+    </section>
+
+    <section id="redes" class="categoria">
+        <h2>Redes</h2>
+        <div class="producto">
+            <img src="images/router.jpg" alt="Router">
+            <h3>Router Wi-Fi 6</h3>
+            <p class="precio">$150.00</p>
+            <button class="btn-add" data-producto="Router Wi-Fi 6" data-precio="150">Añadir al carrito</button>
+        </div>
+        <!-- Más productos aquí -->
+    </section>
+
+    <section id="licencias" class="categoria">
+        <h2>Licencias</h2>
+        <div class="producto">
+            <img src="images/licencia.jpg" alt="Licencia">
+            <h3>Licencia Windows 10 Pro</h3>
+            <p class="precio">$120.00</p>
+            <button class="btn-add" data-producto="Licencia Windows 10 Pro" data-precio="120">Añadir al carrito</button>
+        </div>
+        <!-- Más productos aquí -->
+    </section>
+
+    <section id="smartphone" class="categoria">
+        <h2>Smartphone</h2>
+        <div class="producto">
+            <img src="images/smartphone.jpg" alt="Smartphone">
+            <h3>Smartphone XYZ</h3>
+            <p class="precio">$800.00</p>
+            <button class="btn-add" data-producto="Smartphone XYZ" data-precio="800">Añadir al carrito</button>
+        </div>
+        <!-- Más productos aquí -->
+    </section>
+
+    <section id="miscelaneos" class="categoria">
+        <h2>Misceláneos</h2>
+        <div class="producto">
+            <img src="images/miscelaneo.jpg" alt="Misceláneo">
+            <h3>Teclado Mecánico</h3>
+            <p class="precio">$70.00</p>
+            <button class="btn-add" data-producto="Teclado Mecánico" data-precio="70">Añadir al carrito</button>
+        </div>
+        <!-- Más productos aquí -->
+    </section>
+
+    <section id="punto-venta" class="categoria">
+        <h2>Punto de Venta</h2>
+        <div class="producto">
+            <img src="images/punto-venta.jpg" alt="Punto de Venta">
+            <h3>Sistema de Punto de Venta</h3>
+            <p class="precio">$500.00</p>
+            <button class="btn-add" data-producto="Sistema de Punto de Venta" data-precio="500">Añadir al carrito</button>
+        </div>
+        <!-- Más productos aquí -->
+    </section>
+
+    <section id="carrito" class="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito">
+            <!-- Los productos añadidos aparecerán aquí -->
+        </ul>
+        <p>Total: $<span id="total-carrito">0.00</span></p>
+        <button class="btn-comprar">Comprar Ahora</button>
+    </section>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 PartnerTech. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

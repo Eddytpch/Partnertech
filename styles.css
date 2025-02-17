@@ -1,0 +1,291 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 140px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li.dropdown .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+nav ul li.dropdown:hover .submenu {
+    display: block;
+    padding: 5px 10px;
+}
+
+nav ul li.dropdown .submenu li {
+    margin: 0;
+}
+
+nav ul li.dropdown .submenu li a {
+    color: #fff;
+    padding: 5px 10px;
+    display: block;
+}
+
+.carrito-icono {
+    position: relative;
+}
+
+.carrito-icono a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.carrito-icono span {
+    background-color: #0066ff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8em;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+/* Estilos para la sección Hero */
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero .btn {
+    background-color: #0066ff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Estilos para la sección de Descripción */
+.descripcion {
+    padding: 20px;
+    text-align: center;
+}
+
+.descripcion p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.imagen-descripcion img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para la sección de Beneficios */
+.beneficios {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.beneficios .beneficio {
+    display: inline-block;
+    width: 22%;
+    margin: 1%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.beneficios .beneficio i {
+    font-size: 2em;
+    color: #0066ff;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de Proceso */
+.proceso {
+    padding: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.proceso ol {
+    padding-left: 20px;
+}
+
+.proceso ol li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Estilos para la sección de Contacto CTA */
+.contacto-cta {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contacto-cta .btn {
+    background-color: #0066ff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contacto-cta .btn:hover {
+    background-color: #0066ff;
+}
+
+/* Estilos para la sección de Productos */
+.productos {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.productos .producto {
+    display: inline-block;
+    width: 22%;
+    margin: 1%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+
+.productos .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.productos .producto h3 {
+    margin: 10px 0;
+}
+
+.productos .producto .precio {
+    font-size: 1.2em;
+    color: #0066ff;
+    font-weight: bold;
+}
+
+.btn-add {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: #0066ff;
+}
+
+/* Estilos para la sección del Carrito */
+.carrito {
+    padding: 20px;
+    text-align: center;
+}
+
+.carrito ul {
+    list-style: none;
+    padding: 0;
+}
+
+.carrito ul li {
+    margin: 10px 0;
+}
+
+.btn-comprar {
+    background-color: #0066ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-comprar:hover {
+    background-color: #0066ff;
+}
+
+/* Estilos para la sección de Servicios */
+.servicios {
+    padding: 20px;
+    text-align: center;
+}
+
+.servicios .servicio {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.servicios .servicio i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+footer .redes-sociales a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
